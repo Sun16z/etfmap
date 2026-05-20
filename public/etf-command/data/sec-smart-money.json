@@ -1,0 +1,653 @@
+{
+  "meta": {
+    "generatedAt": "2026-05-20T01:59:00.072Z",
+    "sourceMode": "live-sec",
+    "seedPath": null,
+    "source": "SEC EDGAR Smart Money import",
+    "summary": {
+      "status": "fail",
+      "trackedFunds": 20,
+      "parsedFunds": 0,
+      "trackedCompanies": 20,
+      "parsedCompanies": 0,
+      "trackedActivists": 20,
+      "parsedActivists": 0,
+      "transactionCount": 0,
+      "openMarketBuys": 0,
+      "openMarketSales": 0,
+      "alertCount": 0,
+      "latestFundDate": null,
+      "latestForm4Date": null,
+      "latestActivistDate": null,
+      "latestFundAgeDays": null,
+      "latestForm4AgeDays": null,
+      "latestForm4AgeBusinessDays": null,
+      "latestActivistAgeDays": null,
+      "freshness": {
+        "status": "pass",
+        "label": "正常",
+        "note": "下一個 13F 截止 2026-08-14（86 天）",
+        "next13fDeadline": "2026-08-14",
+        "next13fDeadlineDays": 86,
+        "next13fReportDate": "2026-06-30",
+        "next13fQuarter": "2Q"
+      },
+      "checkedAt": "2026-05-20T01:59:00.072Z",
+      "note": "13F 為季度延遲資料；Form 4 較接近即時，但需解讀交易代碼與 10b5-1。"
+    }
+  },
+  "smartMoney": {
+    "generatedAt": "2026-05-20T01:59:00.071Z",
+    "summary": {
+      "status": "fail",
+      "trackedFunds": 20,
+      "parsedFunds": 0,
+      "trackedCompanies": 20,
+      "parsedCompanies": 0,
+      "trackedActivists": 20,
+      "parsedActivists": 0,
+      "transactionCount": 0,
+      "openMarketBuys": 0,
+      "openMarketSales": 0,
+      "alertCount": 0,
+      "latestFundDate": null,
+      "latestForm4Date": null,
+      "latestActivistDate": null,
+      "latestFundAgeDays": null,
+      "latestForm4AgeDays": null,
+      "latestForm4AgeBusinessDays": null,
+      "latestActivistAgeDays": null,
+      "freshness": {
+        "status": "pass",
+        "label": "正常",
+        "note": "下一個 13F 截止 2026-08-14（86 天）",
+        "next13fDeadline": "2026-08-14",
+        "next13fDeadlineDays": 86,
+        "next13fReportDate": "2026-06-30",
+        "next13fQuarter": "2Q"
+      },
+      "checkedAt": "2026-05-20T01:59:00.072Z",
+      "note": "13F 為季度延遲資料；Form 4 較接近即時，但需解讀交易代碼與 10b5-1。"
+    },
+    "funds": [
+      {
+        "id": "berkshire",
+        "name": "Berkshire Hathaway",
+        "lead": "Warren Buffett",
+        "cik": "0001067983",
+        "style": "價值 / 保險浮存金",
+        "status": "error",
+        "error": "SEC submissions 0001067983 HTTP 429 after retries",
+        "totalValue": 0,
+        "holdingCount": 0,
+        "topHoldings": [],
+        "strategicHoldings": [],
+        "changes": []
+      },
+      {
+        "id": "bridgewater",
+        "name": "Bridgewater Associates",
+        "lead": "Ray Dalio legacy",
+        "cik": "0001350694",
+        "style": "宏觀 / 風險平價",
+        "status": "error",
+        "error": "SEC submissions 0001350694 HTTP 429 after retries",
+        "totalValue": 0,
+        "holdingCount": 0,
+        "topHoldings": [],
+        "strategicHoldings": [],
+        "changes": []
+      },
+      {
+        "id": "scion",
+        "name": "Scion Asset Management",
+        "lead": "Michael Burry",
+        "cik": "0001649339",
+        "style": "逆向 / 集中押注",
+        "status": "error",
+        "error": "SEC submissions 0001649339 HTTP 429 after retries",
+        "totalValue": 0,
+        "holdingCount": 0,
+        "topHoldings": [],
+        "strategicHoldings": [],
+        "changes": []
+      },
+      {
+        "id": "pershing",
+        "name": "Pershing Square",
+        "lead": "Bill Ackman",
+        "cik": "0001336528",
+        "style": "集中 / 品牌現金流",
+        "status": "error",
+        "error": "SEC submissions 0001336528 HTTP 429 after retries",
+        "totalValue": 0,
+        "holdingCount": 0,
+        "topHoldings": [],
+        "strategicHoldings": [],
+        "changes": []
+      },
+      {
+        "id": "appaloosa",
+        "name": "Appaloosa",
+        "lead": "David Tepper",
+        "cik": "0001006438",
+        "style": "機會型 / 週期",
+        "status": "error",
+        "error": "SEC submissions 0001006438 HTTP 429 after retries",
+        "totalValue": 0,
+        "holdingCount": 0,
+        "topHoldings": [],
+        "strategicHoldings": [],
+        "changes": []
+      },
+      {
+        "id": "renaissance",
+        "name": "Renaissance Technologies",
+        "lead": "Jim Simons legacy",
+        "cik": "0001037389",
+        "style": "量化 / 多因子",
+        "status": "error",
+        "error": "SEC submissions 0001037389 HTTP 429 after retries",
+        "totalValue": 0,
+        "holdingCount": 0,
+        "topHoldings": [],
+        "strategicHoldings": [],
+        "changes": []
+      },
+      {
+        "id": "ark",
+        "name": "ARK Investment Management",
+        "lead": "Cathie Wood",
+        "cik": "0001697748",
+        "style": "創新成長",
+        "status": "error",
+        "error": "SEC submissions 0001697748 HTTP 429 after retries",
+        "totalValue": 0,
+        "holdingCount": 0,
+        "topHoldings": [],
+        "strategicHoldings": [],
+        "changes": []
+      },
+      {
+        "id": "coatue",
+        "name": "Coatue Management",
+        "lead": "Philippe Laffont",
+        "cik": "0001135730",
+        "style": "科技成長",
+        "status": "error",
+        "error": "SEC submissions 0001135730 HTTP 429 after retries",
+        "totalValue": 0,
+        "holdingCount": 0,
+        "topHoldings": [],
+        "strategicHoldings": [],
+        "changes": []
+      },
+      {
+        "id": "tiger",
+        "name": "Tiger Global",
+        "lead": "Chase Coleman",
+        "cik": "0001167483",
+        "style": "網路 / 成長",
+        "status": "error",
+        "error": "SEC submissions 0001167483 HTTP 429 after retries",
+        "totalValue": 0,
+        "holdingCount": 0,
+        "topHoldings": [],
+        "strategicHoldings": [],
+        "changes": []
+      },
+      {
+        "id": "duquesne",
+        "name": "Duquesne Family Office",
+        "lead": "Stanley Druckenmiller",
+        "cik": "0001536411",
+        "style": "宏觀 / 成長",
+        "status": "error",
+        "error": "SEC submissions 0001536411 HTTP 429 after retries",
+        "totalValue": 0,
+        "holdingCount": 0,
+        "topHoldings": [],
+        "strategicHoldings": [],
+        "changes": []
+      },
+      {
+        "id": "soros",
+        "name": "Soros Fund Management",
+        "lead": "George Soros legacy",
+        "cik": "0001029160",
+        "style": "宏觀 / 事件",
+        "status": "error",
+        "error": "SEC submissions 0001029160 HTTP 429 after retries",
+        "totalValue": 0,
+        "holdingCount": 0,
+        "topHoldings": [],
+        "strategicHoldings": [],
+        "changes": []
+      },
+      {
+        "id": "baupost",
+        "name": "Baupost Group",
+        "lead": "Seth Klarman",
+        "cik": "0001061768",
+        "style": "深度價值",
+        "status": "error",
+        "error": "SEC submissions 0001061768 HTTP 429 after retries",
+        "totalValue": 0,
+        "holdingCount": 0,
+        "topHoldings": [],
+        "strategicHoldings": [],
+        "changes": []
+      },
+      {
+        "id": "greenlight",
+        "name": "Greenlight Capital",
+        "lead": "David Einhorn",
+        "cik": "0001079114",
+        "style": "價值 / 空頭研究",
+        "status": "error",
+        "error": "SEC submissions 0001079114 HTTP 429 after retries",
+        "totalValue": 0,
+        "holdingCount": 0,
+        "topHoldings": [],
+        "strategicHoldings": [],
+        "changes": []
+      },
+      {
+        "id": "lonepine",
+        "name": "Lone Pine Capital",
+        "lead": "Stephen Mandel legacy",
+        "cik": "0001061165",
+        "style": "品質成長",
+        "status": "error",
+        "error": "SEC submissions 0001061165 HTTP 429 after retries",
+        "totalValue": 0,
+        "holdingCount": 0,
+        "topHoldings": [],
+        "strategicHoldings": [],
+        "changes": []
+      },
+      {
+        "id": "viking",
+        "name": "Viking Global",
+        "lead": "Andreas Halvorsen",
+        "cik": "0001103804",
+        "style": "多空 / 成長",
+        "status": "error",
+        "error": "SEC submissions 0001103804 HTTP 429 after retries",
+        "totalValue": 0,
+        "holdingCount": 0,
+        "topHoldings": [],
+        "strategicHoldings": [],
+        "changes": []
+      },
+      {
+        "id": "thirdpoint",
+        "name": "Third Point",
+        "lead": "Dan Loeb",
+        "cik": "0001040273",
+        "style": "事件驅動",
+        "status": "error",
+        "error": "SEC submissions 0001040273 HTTP 429 after retries",
+        "totalValue": 0,
+        "holdingCount": 0,
+        "topHoldings": [],
+        "strategicHoldings": [],
+        "changes": []
+      },
+      {
+        "id": "d1",
+        "name": "D1 Capital Partners",
+        "lead": "Dan Sundheim",
+        "cik": "0001747057",
+        "style": "成長 / 私募交叉",
+        "status": "error",
+        "error": "SEC submissions 0001747057 HTTP 429 after retries",
+        "totalValue": 0,
+        "holdingCount": 0,
+        "topHoldings": [],
+        "strategicHoldings": [],
+        "changes": []
+      },
+      {
+        "id": "point72",
+        "name": "Point72 Asset Management",
+        "lead": "Steve Cohen",
+        "cik": "0001603466",
+        "style": "多策略",
+        "status": "error",
+        "error": "SEC submissions 0001603466 HTTP 429 after retries",
+        "totalValue": 0,
+        "holdingCount": 0,
+        "topHoldings": [],
+        "strategicHoldings": [],
+        "changes": []
+      },
+      {
+        "id": "citadel",
+        "name": "Citadel Advisors",
+        "lead": "Ken Griffin",
+        "cik": "0001423053",
+        "style": "多策略 / 做市",
+        "status": "error",
+        "error": "SEC submissions 0001423053 HTTP 429 after retries",
+        "totalValue": 0,
+        "holdingCount": 0,
+        "topHoldings": [],
+        "strategicHoldings": [],
+        "changes": []
+      },
+      {
+        "id": "millennium",
+        "name": "Millennium Management",
+        "lead": "Israel Englander",
+        "cik": "0001273087",
+        "style": "多經理人",
+        "status": "error",
+        "error": "SEC submissions 0001273087 HTTP 429 after retries",
+        "totalValue": 0,
+        "holdingCount": 0,
+        "topHoldings": [],
+        "strategicHoldings": [],
+        "changes": []
+      }
+    ],
+    "companies": [
+      {
+        "ticker": "NVDA",
+        "name": "NVIDIA",
+        "cik": "0001045810",
+        "theme": "AI GPU",
+        "status": "error",
+        "error": "SEC submissions 0001045810 HTTP 429 after retries",
+        "transactionCount": 0,
+        "transactions": [],
+        "activist": {
+          "status": "error",
+          "error": "SEC submissions 0001045810 HTTP 429 after retries"
+        }
+      },
+      {
+        "ticker": "TSLA",
+        "name": "Tesla",
+        "cik": "0001318605",
+        "theme": "EV / AI",
+        "status": "error",
+        "error": "SEC submissions 0001318605 HTTP 429 after retries",
+        "transactionCount": 0,
+        "transactions": [],
+        "activist": {
+          "status": "error",
+          "error": "SEC submissions 0001318605 HTTP 429 after retries"
+        }
+      },
+      {
+        "ticker": "AAPL",
+        "name": "Apple",
+        "cik": "0000320193",
+        "theme": "消費電子",
+        "status": "error",
+        "error": "SEC submissions 0000320193 HTTP 429 after retries",
+        "transactionCount": 0,
+        "transactions": [],
+        "activist": {
+          "status": "error",
+          "error": "SEC submissions 0000320193 HTTP 429 after retries"
+        }
+      },
+      {
+        "ticker": "MSFT",
+        "name": "Microsoft",
+        "cik": "0000789019",
+        "theme": "AI cloud",
+        "status": "error",
+        "error": "SEC submissions 0000789019 HTTP 429 after retries",
+        "transactionCount": 0,
+        "transactions": [],
+        "activist": {
+          "status": "error",
+          "error": "SEC submissions 0000789019 HTTP 429 after retries"
+        }
+      },
+      {
+        "ticker": "META",
+        "name": "Meta",
+        "cik": "0001326801",
+        "theme": "AI ads",
+        "status": "error",
+        "error": "SEC submissions 0001326801 HTTP 429 after retries",
+        "transactionCount": 0,
+        "transactions": [],
+        "activist": {
+          "status": "error",
+          "error": "SEC submissions 0001326801 HTTP 429 after retries"
+        }
+      },
+      {
+        "ticker": "GOOGL",
+        "name": "Alphabet",
+        "cik": "0001652044",
+        "theme": "Search / AI",
+        "status": "error",
+        "error": "SEC submissions 0001652044 HTTP 429 after retries",
+        "transactionCount": 0,
+        "transactions": [],
+        "activist": {
+          "status": "error",
+          "error": "SEC submissions 0001652044 HTTP 429 after retries"
+        }
+      },
+      {
+        "ticker": "AMD",
+        "name": "AMD",
+        "cik": "0000002488",
+        "theme": "AI GPU / CPU",
+        "status": "error",
+        "error": "SEC submissions 0000002488 HTTP 429 after retries",
+        "transactionCount": 0,
+        "transactions": [],
+        "activist": {
+          "status": "error",
+          "error": "SEC submissions 0000002488 HTTP 429 after retries"
+        }
+      },
+      {
+        "ticker": "AVGO",
+        "name": "Broadcom",
+        "cik": "0001730168",
+        "theme": "ASIC / 網通",
+        "status": "error",
+        "error": "SEC submissions 0001730168 HTTP 429 after retries",
+        "transactionCount": 0,
+        "transactions": [],
+        "activist": {
+          "status": "error",
+          "error": "SEC submissions 0001730168 HTTP 429 after retries"
+        }
+      },
+      {
+        "ticker": "PLTR",
+        "name": "Palantir",
+        "cik": "0001321655",
+        "theme": "AI software",
+        "status": "error",
+        "error": "SEC submissions 0001321655 HTTP 429 after retries",
+        "transactionCount": 0,
+        "transactions": [],
+        "activist": {
+          "status": "error",
+          "error": "SEC submissions 0001321655 HTTP 429 after retries"
+        }
+      },
+      {
+        "ticker": "SMCI",
+        "name": "Super Micro",
+        "cik": "0001375365",
+        "theme": "AI server",
+        "status": "error",
+        "error": "SEC submissions 0001375365 HTTP 429 after retries",
+        "transactionCount": 0,
+        "transactions": [],
+        "activist": {
+          "status": "error",
+          "error": "SEC submissions 0001375365 HTTP 429 after retries"
+        }
+      },
+      {
+        "ticker": "AMZN",
+        "name": "Amazon",
+        "cik": "0001018724",
+        "theme": "Cloud / retail",
+        "status": "error",
+        "error": "SEC submissions 0001018724 HTTP 429 after retries",
+        "transactionCount": 0,
+        "transactions": [],
+        "activist": {
+          "status": "error",
+          "error": "SEC submissions 0001018724 HTTP 429 after retries"
+        }
+      },
+      {
+        "ticker": "NFLX",
+        "name": "Netflix",
+        "cik": "0001065280",
+        "theme": "Streaming",
+        "status": "error",
+        "error": "SEC submissions 0001065280 HTTP 429 after retries",
+        "transactionCount": 0,
+        "transactions": [],
+        "activist": {
+          "status": "error",
+          "error": "SEC submissions 0001065280 HTTP 429 after retries"
+        }
+      },
+      {
+        "ticker": "ORCL",
+        "name": "Oracle",
+        "cik": "0001341439",
+        "theme": "Cloud infra",
+        "status": "error",
+        "error": "SEC submissions 0001341439 HTTP 429 after retries",
+        "transactionCount": 0,
+        "transactions": [],
+        "activist": {
+          "status": "error",
+          "error": "SEC submissions 0001341439 HTTP 429 after retries"
+        }
+      },
+      {
+        "ticker": "CRM",
+        "name": "Salesforce",
+        "cik": "0001108524",
+        "theme": "Enterprise AI",
+        "status": "error",
+        "error": "SEC submissions 0001108524 HTTP 429 after retries",
+        "transactionCount": 0,
+        "transactions": [],
+        "activist": {
+          "status": "error",
+          "error": "SEC submissions 0001108524 HTTP 429 after retries"
+        }
+      },
+      {
+        "ticker": "ARM",
+        "name": "Arm",
+        "cik": "0001973239",
+        "theme": "CPU IP",
+        "status": "error",
+        "error": "SEC submissions 0001973239 HTTP 429 after retries",
+        "transactionCount": 0,
+        "transactions": [],
+        "activist": {
+          "status": "error",
+          "error": "SEC submissions 0001973239 HTTP 429 after retries"
+        }
+      },
+      {
+        "ticker": "ASML",
+        "name": "ASML",
+        "cik": "0000937966",
+        "theme": "半導體設備",
+        "status": "error",
+        "error": "SEC submissions 0000937966 HTTP 429 after retries",
+        "transactionCount": 0,
+        "transactions": [],
+        "activist": {
+          "status": "error",
+          "error": "SEC submissions 0000937966 HTTP 429 after retries"
+        }
+      },
+      {
+        "ticker": "MU",
+        "name": "Micron",
+        "cik": "0000723125",
+        "theme": "Memory",
+        "status": "error",
+        "error": "SEC submissions 0000723125 HTTP 429 after retries",
+        "transactionCount": 0,
+        "transactions": [],
+        "activist": {
+          "status": "error",
+          "error": "SEC submissions 0000723125 HTTP 429 after retries"
+        }
+      },
+      {
+        "ticker": "INTC",
+        "name": "Intel",
+        "cik": "0000050863",
+        "theme": "Foundry / CPU",
+        "status": "error",
+        "error": "SEC submissions 0000050863 HTTP 429 after retries",
+        "transactionCount": 0,
+        "transactions": [],
+        "activist": {
+          "status": "error",
+          "error": "SEC submissions 0000050863 HTTP 429 after retries"
+        }
+      },
+      {
+        "ticker": "COIN",
+        "name": "Coinbase",
+        "cik": "0001679788",
+        "theme": "Crypto",
+        "status": "error",
+        "error": "SEC submissions 0001679788 HTTP 429 after retries",
+        "transactionCount": 0,
+        "transactions": [],
+        "activist": {
+          "status": "error",
+          "error": "SEC submissions 0001679788 HTTP 429 after retries"
+        }
+      },
+      {
+        "ticker": "MSTR",
+        "name": "MicroStrategy",
+        "cik": "0001050446",
+        "theme": "Bitcoin proxy",
+        "status": "error",
+        "error": "SEC submissions 0001050446 HTTP 429 after retries",
+        "transactionCount": 0,
+        "transactions": [],
+        "activist": {
+          "status": "error",
+          "error": "SEC submissions 0001050446 HTTP 429 after retries"
+        }
+      }
+    ],
+    "transactions": [],
+    "alerts": [],
+    "sources": [
+      {
+        "label": "SEC submissions API",
+        "url": "https://www.sec.gov/search-filings/edgar-application-programming-interfaces"
+      },
+      {
+        "label": "SEC Form 13F FAQ",
+        "url": "https://www.sec.gov/rules-regulations/staff-guidance/division-investment-management-frequently-asked-questions/frequently-asked-questions-about-form-13f"
+      },
+      {
+        "label": "SEC Forms 3/4/5 bulletin",
+        "url": "https://www.sec.gov/files/forms-3-4-5.pdf"
+      }
+    ]
+  }
+}

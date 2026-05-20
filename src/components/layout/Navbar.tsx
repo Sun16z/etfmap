@@ -20,6 +20,7 @@ const tabs = [
   { id: 'simulate',      label: '供應鏈模擬', href: '/?tab=simulate',       icon: '⚡' },
   { id: 'portfolio',     label: '組合健診',   href: '/?tab=portfolio',      icon: '❤️' },
   { id: 'rotation',      label: '輪動雷達',   href: '/?tab=rotation',       icon: '🔄' },
+  { id: 'etf-command',   label: 'ETF 工作台', href: '/etf-command/',        icon: '📋' },
 ]
 
 interface SearchResult {
@@ -241,17 +242,7 @@ export default function Navbar({ activeTab }: { activeTab: string }) {
 
           {/* Actions */}
           <div className="flex items-center gap-2 shrink-0">
-            <a
-              href="https://sun16z.github.io/active-etf-command/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium text-slate-400 hover:text-slate-200 transition-all"
-              style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.07)' }}
-            >
-              <span>📋</span>
-              <span>ETF 工作台</span>
-            </a>
-            <button className="p-2 rounded-lg text-slate-400 hover:text-slate-200 hover:bg-white/5 transition-all">
+<button className="p-2 rounded-lg text-slate-400 hover:text-slate-200 hover:bg-white/5 transition-all">
               <Bell size={16} />
             </button>
             <button className="p-2 rounded-lg text-slate-400 hover:text-yellow-400 hover:bg-white/5 transition-all">
