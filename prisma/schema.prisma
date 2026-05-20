@@ -1,0 +1,144 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model ETF {
+  id          String   @id @default(cuid())
+  code        String   @unique
+  name        String
+  nameEn      String?
+  category    String
+  subCategory String?
+  issuer      String?
+  nav         Float?
+  price       Float?
+  change      Float?
+  changePct   Float?
+  volume      BigInt?
+  aum         Float?
+  ter         Float?
+  trackIndex  String?
+  description String?  @db.Text
+  updatedAt   DateTime @updatedAt
+  createdAt   DateTime @default(now())
+
+  holdings ETFHolding[]
+  aiScore  AIScore?
+  themes   ETFTheme[]
+}
+
+model Stock {
+  id          String   @id @default(cuid())
+  code        String   @unique
+  name        String
+  sector      String?
+  industry    String?
+  marketCap   Float?
+  price       Float?
+  change      Float?
+  changePct   Float?
+  volume      BigInt?
+  pe          Float?
+  pb          Float?
+  ceo         String?
+  founded     Int?
+  website     String?
+  address     String?
+  description String?  @db.Text
+  updatedAt   DateTime @updatedAt
+  createdAt   DateTime @default(now())
+
+  etfHoldings ETFHolding[]
+  aiScore     AIScore?
+  themes      StockTheme[]
+}
+
+model ETFHolding {
+  id      String @id @default(cuid())
+  etfId   String
+  stockId String
+  weight  Float
+
+  etf   ETF   @relation(fields: [etfId], references: [id])
+  stock Stock @relation(fields: [stockId], references: [id])
+
+  @@unique([etfId, stockId])
+}
+
+model Theme {
+  id          String   @id @default(cuid())
+  name        String   @unique
+  nameEn      String?
+  category    String
+  icon        String?
+  description String?  @db.Text
+  tags        String[]
+  isHot       Boolean  @default(false)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  etfs   ETFTheme[]
+  stocks StockTheme[]
+}
+
+model ETFTheme {
+  etfId   String
+  themeId String
+  etf     ETF   @relation(fields: [etfId], references: [id])
+  theme   Theme @relation(fields: [themeId], references: [id])
+
+  @@id([etfId, themeId])
+}
+
+model StockTheme {
+  stockId String
+  themeId String
+  stock   Stock @relation(fields: [stockId], references: [id])
+  theme   Theme @relation(fields: [themeId], references: [id])
+
+  @@id([stockId, themeId])
+}
+
+model AIScore {
+  id         String   @id @default(cuid())
+  stockId    String?  @unique
+  etfId      String?  @unique
+  total      Float
+  themeScore Float?
+  techScore  Float?
+  fundScore  Float?
+  baseScore  Float?
+  sentiment  String?
+  summary    String?  @db.Text
+  analyzedAt DateTime @default(now())
+
+  stock Stock? @relation(fields: [stockId], references: [id])
+  etf   ETF?   @relation(fields: [etfId], references: [id])
+}
+
+model NewsItem {
+  id          String   @id @default(cuid())
+  title       String
+  summary     String?  @db.Text
+  source      String
+  url         String
+  publishedAt DateTime
+  tags        String[]
+  themeTags   String[]
+  createdAt   DateTime @default(now())
+}
+
+model MarketIndex {
+  id        String   @id @default(cuid())
+  code      String   @unique
+  name      String
+  value     Float
+  change    Float
+  changePct Float
+  updatedAt DateTime @updatedAt
+}
